@@ -5,7 +5,7 @@ import librosa
 from streamlit_webrtc import webrtc_streamer
 import av
 import joblib
-model = joblib.load("alarm_model.pkl")
+
 
 # 🎨 Page Configuration
 st.set_page_config(page_title="🔔 Alarm Classifier", layout="centered", page_icon="🎧")
@@ -58,7 +58,7 @@ CLASSES = list(ALL_CLASSES.keys())
 # 🔍 Load the trained model
 MODEL_PATH = "alarm_model.pkl"
 try:
-    model = joblib.load(MODEL_PATH)
+    model = joblib.load("alarm_model.pkl")
     # If the model has a `classes_` attribute, ensure it's defined
     if not hasattr(model, "classes_"):
         st.error("Loaded model does not have `classes_`. Did you train & save correctly?")
