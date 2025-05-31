@@ -47,11 +47,11 @@ with st.expander("🧠 How does this work?"):
 
 # 🎭 Sound Classes (must match labels used during training)
 ALL_CLASSES = {
-    "fire_alarm": "🔥",
-    "buzzer": "🛎️",
-    "smoke_detector": "🚨",
-    "timer_alarm": "⏰"
-    # Add more classes if you train on additional categories
+    "buzzer_alarm": "🔔 Buzzer Alarm",
+    "school_bell": "🏫 School Bell",
+    "fire_alarms": "🔥 Fire Alarms",
+    "smoke_detector": "🚨 Smoke Detector",
+    "timer_alarm": "⏰ Timer Alarm"
 }
 CLASSES = list(ALL_CLASSES.keys())
 
