@@ -92,6 +92,7 @@ with tab1:
             if features.shape[1] == model.n_features_in_:
                 pred = model.predict(features)[0]
                 probs = model.predict_proba(features)[0]
+                print("probs:", probs)
                 confidence = np.max(probs)
                 st.success(f"{ALL_CLASSES[pred]} *{pred.replace('_', ' ').title()}* detected!")
                 st.progress(confidence)
