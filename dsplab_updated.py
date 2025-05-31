@@ -2,9 +2,10 @@
 import streamlit as st
 import numpy as np
 import librosa
-import joblib
 from streamlit_webrtc import webrtc_streamer
 import av
+import joblib
+model = joblib.load("alarm_model.pkl")
 
 # 🎨 Page Configuration
 st.set_page_config(page_title="🔔 Alarm Classifier", layout="centered", page_icon="🎧")
