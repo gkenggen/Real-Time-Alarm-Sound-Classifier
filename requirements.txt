@@ -1,8 +1,0 @@
-streamlit
-streamlit-webrtc
-librosa
-joblib
-scikit-learn
-numpy
-av
-soundfile
